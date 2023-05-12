@@ -1,29 +1,39 @@
-/* BODY */
-/*  */
+/* GENERAL */
 html,
 body {
   height: 90%;
   background-image: linear-gradient(to right, #0066ff, #ff99cc);
 }
-
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin: 10px;
+}
+h3 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 5px;
+}
+/*  */
+/* FLEX */
+/*  */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/*  */
-/* FONT FAMILY */
-/*  */
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .joc {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   align-content: center;
+}
+/*  */
+/* FONT FAMILY */
+/*  */
+body {
+  font-family: "Segoe UI";
 }
 /*  */
 /* INPUT */
@@ -41,58 +51,43 @@ body {
   padding: 20px;
 }
 .input1 {
+  /* GENERAL */
   height: 45px;
   width: 100px;
   text-align: center;
   font-size: 32px;
-
   padding: 10px 20px;
-  border-radius: 10px;
   margin-right: 20px;
-
+  /* COLOR */
   background: white;
-
+  /* BORDER */
   border-width: 2px;
   border-color: black;
   border-style: solid;
-  /* Add a box shadow */
+  border-radius: 10px;
+  /* SHADOW */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-
-  /* Add some text shadow */
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 }
-
+/*  */
+/* BUTTON */
+/*  */
 .btn {
+  /* GENERAL */
   font-size: 24px;
-
-  /* Add some padding and border */
   padding: 10px 20px;
+  /* BORDER */
   border: none;
   border-radius: 10px;
-
-  /* Add a gradient background */
+  /* COLOR */
   background: linear-gradient(to right, #f6d365, #fda085);
-
-  /* Add a box shadow */
+  /* SHADOW */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-
-  /* Add some text shadow */
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-
-  /* Add a hover effect */
+  /* TRANSITION */
   transition: all 0.3s ease-in-out;
 }
 button:hover {
   transform: scale(1.05);
   cursor: pointer;
-}
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin: 10px;
-}
-h3 {
-  font-size: 24px;
-  font-weight: normal;
-  margin: 5px;
 }
