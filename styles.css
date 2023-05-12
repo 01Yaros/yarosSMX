@@ -1,9 +1,9 @@
-/*  */
 /* BODY */
 /*  */
 html,
 body {
   height: 90%;
+  background-image: linear-gradient(to right, #0066ff, #ff99cc);
 }
 
 body {
@@ -28,10 +28,10 @@ body {
 /*  */
 /* INPUT */
 /*  */
-input[type="text"] {
-  content: "Escriu...";
-  top: 0;
-  color: black;
+.input1::placeholder {
+  color: grey;
+  font-style: italic;
+  font-size: 24px;
 }
 .input0 {
   display: flex;
@@ -40,40 +40,28 @@ input[type="text"] {
   font-weight: bold;
   padding: 20px;
 }
-.input00 {
+.input1 {
   height: 45px;
   width: 100px;
   text-align: center;
   font-size: 32px;
-  font-weight: bold;
 
   padding: 10px 20px;
-  border: none;
   border-radius: 10px;
   margin-right: 20px;
 
-  /* Add a gradient background */
-  background: linear-gradient(to right, #f6d365, #fda085);
+  background: white;
 
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
   /* Add a box shadow */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 
   /* Add some text shadow */
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
-
-  /* Add a hover effect */
-  transition: all 0.2s ease-in-out;
 }
 
-input[type="text"]::before {
-  content: "Enter your text here";
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #ccc;
-  font-size: 16px;
-  padding: 10px;
-}
 .btn {
   font-size: 24px;
 
@@ -92,7 +80,7 @@ input[type="text"]::before {
   text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
 
   /* Add a hover effect */
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 button:hover {
   transform: scale(1.05);
